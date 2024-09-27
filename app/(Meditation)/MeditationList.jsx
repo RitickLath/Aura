@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, StatusBar } from "react-native";
 import React from "react";
 import MeditationCard from "../Components/MeditationCard";
 import { FlatList } from "react-native";
@@ -45,6 +45,7 @@ const MeditationList = () => {
           <MeditationCard img={item.img} text={item.text} />
         )}
       />
+      <StatusBar translucent barStyle="light-content" />
     </View>
   );
 };

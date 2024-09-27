@@ -1,6 +1,12 @@
-import { View, Text, ImageBackground, Pressable } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  Pressable,
+  StatusBar,
+} from "react-native";
 import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView } from "react-native";
 import { useRouter } from "expo-router";
 
 const backgroundImage = require("../assets/affirmation-images/mountain-meditate-3.webp");
@@ -38,6 +44,7 @@ const Index = () => {
           </View>
         </View>
       </ImageBackground>
+     
     </SafeAreaView>
   );
 };
