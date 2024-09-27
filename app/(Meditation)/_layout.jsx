@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
 
@@ -13,6 +12,11 @@ const Layout = () => {
         name="AffirmationList"
         options={{ headerShown: false, title: "Affirmation" }}
       />
+      <Tabs.Screen
+        name="Meditate"
+        options={{ headerShown: false, href: null }}
+      />
+      <Tabs.Screen name="Quote" options={{ headerShown: false, href: null }} />
     </Tabs>
   );
 };

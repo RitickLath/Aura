@@ -15,9 +15,7 @@ const Layout = () => {
         name="(Meditation)"
         options={{
           title: "Home",
-          headerStyle: {
-            backgroundColor: "#122931",
-          },
+          headerTransparent: true,
           headerTintColor: "#fff",
           headerTitleStyle: {
             fontWeight: "bold",

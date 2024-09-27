@@ -2,6 +2,7 @@ import { View, Text, StatusBar } from "react-native";
 import React from "react";
 import MeditationCard from "../Components/MeditationCard";
 import { FlatList } from "react-native";
+import { Link } from "expo-router";
 const img1 = require("../../assets/meditation-images/beach.webp");
 const img2 = require("../../assets/meditation-images/meditate-under-tree.webp");
 const img3 = require("../../assets/meditation-images/river.webp");
@@ -38,13 +39,14 @@ const Lists = [
 
 const MeditationList = () => {
   return (
-    <View className="pb-6 bg-[#122931]">
+    <View className="pb-6 bg-[#122931]  pt-[75px]">
       <FlatList
         data={Lists}
         renderItem={({ item }) => (
           <MeditationCard img={item.img} text={item.text} />
         )}
       />
+      <Link href="Beach">Beach</Link>
       <StatusBar translucent barStyle="light-content" />
     </View>
   );

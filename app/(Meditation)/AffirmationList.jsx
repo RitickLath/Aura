@@ -35,45 +35,163 @@ const img24 = require("../../assets/affirmation-images/Tuscanny-4.webp");
 
 // List Data
 const List1 = [
-  { img: img1, text: "California1" },
-  { img: img2, text: "California2" },
-  { img: img3, text: "California3" },
-  { img: img4, text: "California4" },
+  {
+    img: img1,
+    text: "California1",
+    affirmation:
+      "I am surrounded by positivity, and I attract only good things into my life.",
+  },
+  {
+    img: img2,
+    text: "California2",
+    affirmation:
+      "Positivity flows through me, and I embrace every moment with gratitude.",
+  },
+  {
+    img: img3,
+    text: "California3",
+    affirmation:
+      "I focus on the positive in every situation and let go of negativity.",
+  },
+  {
+    img: img4,
+    text: "California4",
+    affirmation:
+      "I radiate positivity and uplift those around me with my energy.",
+  },
 ];
 
 const List2 = [
-  { img: img5, text: "English Countryside 1" },
-  { img: img6, text: "English Countryside 2" },
-  { img: img7, text: "English Countryside 3" },
-  { img: img8, text: "English Countryside 4" },
+  {
+    img: img5,
+    text: "English Countryside 1",
+    affirmation:
+      "I release all tension and breathe deeply to calm my mind and body.",
+  },
+  {
+    img: img6,
+    text: "English Countryside 2",
+    affirmation:
+      "With every breath, I release stress and allow peace to fill me.",
+  },
+  {
+    img: img7,
+    text: "English Countryside 3",
+    affirmation:
+      "I am calm, centered, and my anxiety fades with every deep breath.",
+  },
+  {
+    img: img8,
+    text: "English Countryside 4",
+    affirmation: "I am in control of my thoughts, and I choose calm over fear.",
+  },
 ];
 
 const List3 = [
-  { img: img9, text: "Mountain Meditate 1" },
-  { img: img10, text: "Mountain Meditate 2" },
-  { img: img11, text: "Mountain Meditate 3" },
-  { img: img12, text: "Mountain Meditate 4" },
+  {
+    img: img9,
+    text: "Mountain Meditate 1",
+    affirmation:
+      "Success comes to me effortlessly because I believe in my abilities.",
+  },
+  {
+    img: img10,
+    text: "Mountain Meditate 2",
+    affirmation:
+      "I am worthy of achieving my goals and I am unstoppable in my pursuit.",
+  },
+  {
+    img: img11,
+    text: "Mountain Meditate 3",
+    affirmation: "Every step I take brings me closer to my dreams and success.",
+  },
+  {
+    img: img12,
+    text: "Mountain Meditate 4",
+    affirmation:
+      "Success is mine, and I work hard with focus and determination every day.",
+  },
 ];
 
 const List4 = [
-  { img: img13, text: "Night Sky 1" },
-  { img: img14, text: "Night Sky 2" },
-  { img: img15, text: "Night Sky 3" },
-  { img: img16, text: "Night Sky 4" },
+  {
+    img: img13,
+    text: "Night Sky 1",
+    affirmation:
+      "I believe in myself and know that I can overcome any challenge I face.",
+  },
+  {
+    img: img14,
+    text: "Night Sky 2",
+    affirmation:
+      "I trust in my inner strength, and I am capable of great things.",
+  },
+  {
+    img: img15,
+    text: "Night Sky 3",
+    affirmation:
+      "I have the confidence to be who I am and achieve what I desire.",
+  },
+  {
+    img: img16,
+    text: "Night Sky 4",
+    affirmation:
+      "I am powerful, resilient, and confident in my ability to succeed.",
+  },
 ];
 
 const List5 = [
-  { img: img17, text: "Relaxing River 1" },
-  { img: img18, text: "Relaxing River 2" },
-  { img: img19, text: "Relaxing River 3" },
-  { img: img20, text: "Relaxing River 4" },
+  {
+    img: img17,
+    text: "Relaxing River 1",
+    affirmation:
+      "Gratitude fills my heart, and I am thankful for every moment of my life.",
+  },
+  {
+    img: img18,
+    text: "Relaxing River 2",
+    affirmation:
+      "I appreciate the beauty of life and feel grateful for all my blessings.",
+  },
+  {
+    img: img19,
+    text: "Relaxing River 3",
+    affirmation:
+      "Each day is a gift, and I am grateful for every experience it brings.",
+  },
+  {
+    img: img20,
+    text: "Relaxing River 4",
+    affirmation:
+      "Gratitude opens the door to abundance, and I welcome it into my life.",
+  },
 ];
 
 const List6 = [
-  { img: img21, text: "Tuscanny 1" },
-  { img: img22, text: "Tuscanny 2" },
-  { img: img23, text: "Tuscanny 3" },
-  { img: img24, text: "Tuscanny 4" },
+  {
+    img: img21,
+    text: "Tuscanny 1",
+    affirmation:
+      "I am fully present in this moment, embracing everything life has to offer.",
+  },
+  {
+    img: img22,
+    text: "Tuscanny 2",
+    affirmation:
+      "I am mindful of my thoughts, and I choose peace and awareness in every action.",
+  },
+  {
+    img: img23,
+    text: "Tuscanny 3",
+    affirmation:
+      "I live in the present, savoring every moment with a calm, peaceful mind.",
+  },
+  {
+    img: img24,
+    text: "Tuscanny 4",
+    affirmation:
+      "I am mindful, aware, and fully present, experiencing life with gratitude.",
+  },
 ];
 
 // Sections List
@@ -88,7 +206,7 @@ const sections = [
 
 const AffirmationList = () => {
   return (
-    <ScrollView className="px-1 bg-[#122931]">
+    <ScrollView className="px-1 bg-[#122931] pt-[75px]">
       {/* Loop through each section */}
       {sections.map((section, index) => (
         <View key={index} className="mt-4 mb-3">
@@ -100,7 +218,11 @@ const AffirmationList = () => {
             horizontal
             keyExtractor={(item, index) => index.toString()}
             renderItem={({ item }) => (
-              <AffirmationCard img={item.img} text={item.text} />
+              <AffirmationCard
+                img={item.img}
+                text={item.text}
+                affirmation={item.affirmation}
+              />
             )}
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{ paddingHorizontal: 10 }}
