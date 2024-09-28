@@ -4,7 +4,7 @@ import { router } from "expo-router";
 
 const MeditationCard = ({ img, text }) => {
   const handlePress = () => {
-    router.push("Meditate");
+    router.push({ pathname: "Meditate", params: { text } });
   };
   return (
     <Pressable onPress={handlePress}>

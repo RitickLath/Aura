@@ -17,6 +17,11 @@ const Layout = () => {
         options={{ headerShown: false, href: null }}
       />
       <Tabs.Screen name="Quote" options={{ headerShown: false, href: null }} />
+
+      <Tabs.Screen
+        name="Playing"
+        options={{ headerShown: false, href: null }}
+      />
     </Tabs>
   );
 };
